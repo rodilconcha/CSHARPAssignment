@@ -12,7 +12,7 @@ namespace ConsoleApp9
     
     protected override void OnConfiguring( DbContextOptionsBuilder optionsBuilder)
     { 
-        optionsBuilder.UseSqlServer(("Server= ")
+        optionsBuilder.UseSqlServer(("Server=Server[@Name='AlishaFaith\SQLSERVER']/Database[@Name='SchoolDbContext']/Table[@Name='Student' and @Schema='dbo']/Data ")
     }
 }
 using (var context = new SchoolDbContext))
